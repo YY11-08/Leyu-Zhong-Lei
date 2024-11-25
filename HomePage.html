@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leyu Zhong Lei</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+        }
+        table {
+            width: 100%;
+            background-color: #ffffff;
+            border: 2px solid #333;}
+        tr, td {
+            border: 1px solid #ddd;
+            padding: 15px;}
+        h1 {
+            color: #ff92c5;
+            font-family: 'StretchPro';}
+        h2 {
+            color: #006400;}
+        p {
+            color: #2c328a;}
+
+        @font-face {
+            font-family: 'StretchPro';
+            src: url('fonts/StretchPro.otf') format('truetype');}
+
+        .curvy-image {
+            border-radius: 15px;
+            border: 3px solid #b69beb;}
+        .image-container {
+            position: relative;
+            display: inline-block;
+            width: 300px;}
+
+        .image-container img {
+            width: 100%;
+            border-radius: 15px;
+            border: 3px solid #908898;}
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            transition: transform 0.5s;}
+
+      
+        @keyframes spin {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);}
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);}
+        }
+
+       
+        .text-overlay:hover {
+            animation: spin 0.8s ease-in-out;}
+    </style>
+</head>
+<body>
+    <h1>Welcome to my Personal Website!</h1>
+    <table>
+        
+        <tr>
+            
+            <td colspan="4">
+                <p>This is the Home Page.<br>
+                    <stong>Click the Photos!</stong>
+                </p>
+                
+                <ul>
+                    <td>
+                        <a href="https://www.instagram.com/1_1eyuyu/">
+                            <div class="image-container">
+                                <img src="Ins.JPG" alt="Leyu" width="100">
+                                <div class="text-overlay">My Instagram</div>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="About_Me.html">
+                            <div class="image-container">
+                                <img src="Leyu.JPG" alt="Leyu">
+                                <div class="text-overlay">About me</div>
+                            </div>
+                        </a>
+                    </td>
+                    <td><a href="My_Family.html">
+                        <div class="image-container">
+                               <img src="Family.jpg" alt="Leyu">
+                        <div class="text-overlay">My Family</div>
+                    </div></a></td>
+                    <td><a href="My_Friends.html">
+                        <div class="image-container">
+                        <img src="Friends.jpg" alt="Leyu">
+                        <div class="text-overlay">My Friends</div>
+                    </div></a></td>
+                </ul>
+                <blockquote>"Be yourself; everyone else is already taken."</blockquote>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
